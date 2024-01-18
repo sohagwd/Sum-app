@@ -15,12 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        // id identification by findViewById
         val num1 = findViewById(R.id.editText1) as EditText
         val num2 = findViewById(R.id.editText2) as EditText
         val total = findViewById(R.id.tvDisplay) as TextView
         val btnSum = findViewById(R.id.button1) as Button
 
+        // btnSum ClickListerner
         btnSum.setOnClickListener {
             val firstNum = num1.text.toString().toInt()
             val secondNum = num2.text.toString().toInt()
